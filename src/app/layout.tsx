@@ -1,4 +1,6 @@
+
 import { Metadata } from "next"
+import Link from "next/link"
 
 
 export const metadata: Metadata = {
@@ -29,7 +31,13 @@ export default function RootLayout({
         }}
         >
           <p>Header</p>
-          
+          <Link style={{textDecoration: 'none',color: "orange",fontSize: "16px",fontFamily: "sans-serif",fontWeight: "bolder",borderBottom: '2px solid orange',paddingBottom: '3px', margin: '20px',}} href={'/'}>
+          Home </Link>
+          <Link 
+          style={{textDecoration: 'none',color: "darkcyan",fontSize: "16px",fontFamily: "sans-serif",fontWeight: "bolder",borderBottom: '2px solid snow',paddingBottom: '3px',}} 
+          href={'/blog'}> Blog </Link>
+          <Link href={'/products'}> Products </Link>
+          <Link href={'/profile'}> Profile </Link>
         </header>
         {children}
         <footer
