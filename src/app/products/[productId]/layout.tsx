@@ -6,7 +6,8 @@ export default function ProductDefaultLayout({
     return (
         <div>
             { children }
-            <h2 style={{backgroundColor: "yellowgreen", marginTop: '8rem'}}>Featured Products</h2>
+            <h2 style={{backgroundColor: "yellowgreen", marginTop: '8rem'}}
+            > Featured Products </h2>
         </div>
     ) 
 
