@@ -18,38 +18,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{     
-            padding: '0', 
-            margin: '0',
-            backgroundColor: "#444",
-            color: 'gray'
-        }}>
-        <header
-          style={{     
-            backgroundColor: 'lightblue',
-            padding: '10px 20px',
-        }}
-        >
-          <p>Header</p>
-          <Link style={{textDecoration: 'none',color: "orange",fontSize: "16px",fontFamily: "sans-serif",fontWeight: "bolder",borderBottom: '2px solid orange',paddingBottom: '3px', margin: '20px',}} href={'/'}>
-          Home </Link>
-          <Link 
-          style={{textDecoration: 'none',color: "darkcyan",fontSize: "16px",fontFamily: "sans-serif",fontWeight: "bolder",borderBottom: '2px solid snow',paddingBottom: '3px',}} 
-          href={'/blog'}> Blog </Link>
+      <body style={{backgroundColor: "lightgray", margin: 0}}>
+        <header style={{backgroundColor: "darkcyan", padding: "15px"}}>
+          <span style={{fontSize: "20px", color: "orange", padding: "0 20px"}}>
+             ⟨ Header ⟩
+          </span>
+          <Link href={'/'}> Home </Link>
+          <Link href={'/blog'}> Blog </Link>
           <Link href={'/products'}> Products </Link>
           <Link href={'/profile'}> Profile </Link>
+          <Link href={'/complex-dashboard'}> Dashboard </Link>
         </header>
         {children}
-        <footer
-        style={{     
-          backgroundColor: 'lightgray',
-          padding: '10px 20px',
-          textAlign: 'center',
-          color: 'indigo',
-          marginTop: '17rem',  
-      }}
-        >
-          <h1>Footer</h1>  
+        <footer style={{ backgroundColor: "darkcyan", padding: "0 20px"}}>
+          <h1> ⟨ Footer ⟩ </h1>  
         </footer>
       </body>
     </html>
